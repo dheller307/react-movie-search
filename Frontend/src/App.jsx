@@ -7,15 +7,15 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div>
+    <MovieProvider>
       <NavBar />
     <main className="main-content">
       <Routes>
-        <route path="/" element={<Home />}/>
-        <route path="/favorites" element={<Favorites />}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/favorites" element={<Favorites />}/>
       </Routes>
     </main>
-    </div>
+    </MovieProvider>
   );
 }
 
